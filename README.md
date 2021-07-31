@@ -1,3 +1,3 @@
 # OtraCosa
 Project OtraCosaStudios
- . Realizado por Miguel Vera     
+(Realizado por Miguel Vera)     
