@@ -103,6 +103,7 @@
     padding: .25rem;
     color: var(--dark-color);
     cursor: pointer;
+   
     
   }
   .nav__img{
@@ -214,8 +215,6 @@
     .nav__perfil {
       display: flex;
       align-items: center;
-
-      
     }
     
     .nav__img img {
