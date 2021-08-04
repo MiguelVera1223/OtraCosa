@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 :root {
-    
+     /* ===== Header ====*/
     --header-height: 3rem;
 
     /* ===== Colors ====*/
-    --first-color: #5B65F5;
-    --first-color-light: #C4C7F5;
-    --dark-color: #0E1026;
-    --white-color: #FBFBFB;
+    --first-color: #0B29C9;
+    --first-color-light: #8C59A8;
+    --second-color: #210179;
+    --dark-color: #101010;
+    --white-color: #FAFAFA;
+    --white: #FFFFFF;
     --dark-color-light: #606060;
     --gray-color: #F0F1F3;
     
@@ -33,7 +36,8 @@
     --z-fixed: 100;
   }
 
-  @media screen and (min-width: 768px) {
+
+@media screen and (min-width: 768px) {
     :root {
       --normal-font-size: 1rem;
       --small-font-size: .813rem;   
@@ -43,7 +47,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     :root {
       --normal-font-size: 1.2rem;
       --small-font-size: .875rem;
@@ -51,9 +55,48 @@
   }
   
   /*===== BASE =====*/
-  *, ::before, ::after {
+*, ::before, ::after {
     
     box-sizing: border-box;
   }
   
- 
+  
+*{
+   
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--dark-color);
+    font-weight: 500;
+    line-height: 1.6;
+
+   }
+
+h1, h2, p{
+      margin: 0;
+  }
+
+ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+
+a{
+    text-decoration: none;
+    
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
