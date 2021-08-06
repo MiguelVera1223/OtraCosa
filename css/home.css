@@ -14,7 +14,7 @@
 
 .home__title{
     align-self: center;
-    font-size: 60px;
+    font-size: 80px;
     line-height: 1;
     letter-spacing: .1rem;
     color: #0B29C9;
@@ -31,25 +31,39 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    top: 250px;
+    top: 200px;
     width: 550px;
 }
 
+.home__beneficios{
+    display: grid;
+    gap: 2.5rem;
+    grid-auto-rows: 10rem;
+    grid-template-columns: repeat(auto-fill, minmax(4rem,1fr));
+}
+
+.home__beneficios__cajas{
+    text-align: center;   
+}
+.home__beneficios__icon{
+    font-size: 50px;
+}
+.home__h6{
+    text-align: center;
+}
 
 
 /* media queries  */
-@media screen and (min-width: 769px){
+@media screen and (min-width: 768px){
    
     .home__container{
         height: 100vh
     }
     .home__img{
-        width: 550px;
-        top: 70px;
+      /*   width: 550px;
+        top: 70px; */
        
-    }
-
-    
+    }   
 }
 
 
