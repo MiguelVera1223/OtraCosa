@@ -14,7 +14,7 @@
 
 .home__title{
     align-self: center;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 1;
     letter-spacing: .1rem;
     color: #0B29C9;
@@ -24,12 +24,13 @@
 .home__title p{
     font-size: 20px;
     color: #A351D6;  
+    font-weight: 600;
 }
 
 
 .home__img{
     position: absolute;
-    right: 0;
+    right: 100px;
     bottom: 0;
     top: 200px;
     width: 550px;
@@ -38,7 +39,7 @@
 .home__beneficios{
     display: grid;
     gap: 2.5rem;
-    grid-auto-rows: 10rem;
+    /* grid-auto-rows: 10rem; */
     grid-template-columns: repeat(auto-fill, minmax(4rem,1fr));
 }
 
