@@ -1,0 +1,35 @@
+.services__data{
+    padding: 1rem 1rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .4;
+    box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
+}
+
+.services__img, .services__title{
+    margin-bottom: var(--mb-2); 
+}
+.services__img{
+    width: 15rem;
+    height: auto;
+}
+.services__title{
+    font-size: var(--h3-font-size);
+}
+.services__description{
+   margin-bottom: var(--mb-4);
+}
+.services__data:hover{
+    transform: translateY(-.5rem);
+    box-shadow: 0 6px 8px rgb(174, 190, 205, .4);
+}
+
+
+.services__cajas{
+    display: grid;
+    gap: 2rem;
+    /*  grid-auto-rows: 10rem; */
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+
+}
