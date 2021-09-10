@@ -46,14 +46,13 @@
 .home__beneficios__cajas{
     text-align: center;   
     
+    
 }
 .home__beneficios__cajas p{
-    box-shadow: 2px 2px 2px 0px rgba(236, 236, 236, 0.75);
+   
     border-radius: 10px;
-    background: #ffffff;
-    box-shadow:  -20px 10px 60px #d9d9d9, 
-                 20px -10px 60px #ffffff;
-
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
     padding-top: 5px;
 }   
 .home__beneficios__icon{
@@ -62,6 +61,7 @@
 }
 .home__h6{
     text-align: center;
+    padding-top: 8px;
 }
 
 

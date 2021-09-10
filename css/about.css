@@ -1,8 +1,4 @@
 
-
-.about{
-    height: calc(100vh - 8rem);
-}
 .about__container{
     row-gap: 2rem;
     text-align: center;

@@ -13,10 +13,9 @@
     left: 0;
     right: 0;
     margin: auto;
- 
     background-color: var(--first-color);
 }
 .section{
-   /*  padding: 4rem 0 2rem; */
+  padding: 5.5rem 0 2rem;
     
 }

@@ -27,3 +27,34 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
+
+
+
+
+
+
+
+
+
+  /*selector de portafolio*/
+
+const mixer = mixitup('.portafolio__container', {
+  selectors: {
+      target: '.portafolio__content'
+  },
+  animation: {
+      duration: 400
+  }
+});
+
+  /*link active de portafolio*/
+
+  const linkPortafolio = document.querySelectorAll('.portafolio__item')
+
+  function activePortafolio(){
+      if(linkPortafolio){
+        linkPortafolio.forEach(n => n.classList.remove('active-portafolio'))
+        this.classList.add('active-portafolio')
+      }
+  }
+  linkPortafolio.forEach(n => n.addEventListener('click', activePortafolio))
