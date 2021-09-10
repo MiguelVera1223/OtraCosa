@@ -57,13 +57,19 @@
      /* grid-auto-rows: 10rem; */
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     margin-top: 25px;
+
 }
 
 .portafolio_ul{
-    display: flex;
-    margin-bottom:  10px;
-    text-align: center;
-    justify-content: center;
+    
+
+    display: grid;
+   
+   
+   grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+   text-align: center;
+   
+
 }
 
 .list{
@@ -73,6 +79,8 @@
     margin: 5px;
     letter-spacing: 1px;
     cursor: pointer;
+    border-radius: 1rem;
+    font-size: 14px;
 }
 
 li.active{
