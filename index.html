@@ -193,16 +193,19 @@
 
             <div class="bd-grid">
                 
-                <div class="portafolio__nav">
-                    <span class="portafolio__item active-portafolio" data-filter="all">All</span>
-                    <span class="portafolio__item " data-filter=".spot">Spot Publicitario</span>
-                    <span class="portafolio__item" data-filter=".diseño">Diseño Gráfico</span>
-                    <span class="portafolio__item" data-filter=".foto">Fotografías</span>
-                </div>
+                
+                    <ul class="portafolio_ul">
+                        <li class="list active" data-filter="all">All</li>
+                        <li class="list" data-filter="diseño">Diseño</li>
+                        <li class="list" data-filter="spot">Spot </li>
+                        <li class="list" data-filter="foto">Fotografias</li>
+                    </ul>
+
+               
 
                 <div class="portafolio__container">
 
-                    <div class="portafolio__content mix spot">
+                    <div class="portafolio__content diseño">
                         <a href="#"><img src="./img/Prueba2.png" alt="" class="portafolio__img"></a>
                         <div class="portafolio__data">
             
@@ -211,7 +214,7 @@
 
                     </div>
 
-                    <div class="portafolio__content mix spot">
+                    <div class="portafolio__content diseño">
                         <a href="#"><img src="./img/Prueba2.png" alt="" class="portafolio__img"></a>
                         <div class="portafolio__data">
                             <a href="#" class="button">ver boton </a>
@@ -220,7 +223,7 @@
                     </div>
                     
                 
-                    <div class="portafolio__content mix spot">
+                    <div class="portafolio__content diseño">
                         <a href="#"><img src="./img/Prueba2.png" alt="" class="portafolio__img"></a>
                         <div class="portafolio__data">
                             
@@ -229,7 +232,7 @@
 
                     </div>
 
-                    <div class="portafolio__content mix diseño">
+                    <div class="portafolio__content spot">
                         <a href="#"><img src="./img/Prueba2.png" alt="" class="portafolio__img"></a>
                         <div class="portafolio__data">
                             
@@ -238,7 +241,7 @@
 
                     </div>
 
-                    <div class="portafolio__content mix diseño">
+                    <div class="portafolio__content spot">
                         <a href="#"><img src="./img/Prueba2.png" alt="" class="portafolio__img"></a>
                         <div class="portafolio__data">
                             
@@ -247,7 +250,7 @@
 
                     </div>
 
-                    <div class="portafolio__content mix diseño">
+                    <div class="portafolio__content spot">
                         <a href="#"><img src="./img/Prueba2.png" alt="" class="portafolio__img"></a>
                         <div class="portafolio__data">
                             
@@ -256,7 +259,7 @@
 
                     </div>
 
-                    <div class="portafolio__content mix diseño">
+                    <div class="portafolio__content spot">
                         <a href="#"><img src="./img/Prueba2.png" alt="" class="portafolio__img"></a>
                         <div class="portafolio__data">
                         
@@ -265,7 +268,7 @@
 
                     </div>
 
-                    <div class="portafolio__content mix foto">
+                    <div class="portafolio__content foto">
                         <a href="#"><img src="./img/Prueba2.png" alt="" class="portafolio__img"></a>
                         <div class="portafolio__data">
                             
@@ -274,7 +277,7 @@
 
                     </div>
 
-                    <div class="portafolio__content mix foto">
+                    <div class="portafolio__content foto">
                         <a href="#"><img src="./img/Prueba2.png" alt="" class="portafolio__img"></a>
                         <div class="portafolio__data">
                             
@@ -310,10 +313,10 @@
 
 
 
-    <!-- ===== MIxitup  FILTER ===== -->
+    <!-- ===== cdnjs  FILTER ===== -->
 
-    <script src="./js/mixitup.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+   
     <!-- ===== BOXICONS ===== -->
     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
 
@@ -324,7 +327,27 @@
     <script src="./js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    
+       <!-- ===== filter jqueri portafolio ===== -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if (value =='all'){
+                    $('.portafolio__content').show('1000');
+                }
+                else{
+                    $('.portafolio__content').not('.'+value).hide('1000');
+                    $('.portafolio__content').filter('.'+value).show('1000');
+                }
+                })
+            })
+           //active class add
+           $('.list').click(function(){
+               $(this).addClass('active').siblings().removeClass('active');
+           })
+        
+    </script>
 
 
 </body>

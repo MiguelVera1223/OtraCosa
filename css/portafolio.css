@@ -12,7 +12,6 @@
     background-color: #fff;
     border-radius: .5rem;
     overflow: hidden;
-    
     text-align: center;
 }
 
@@ -57,5 +56,27 @@
    
      /* grid-auto-rows: 10rem; */
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    margin-top: 25px;
+}
+
+.portafolio_ul{
+    display: flex;
+    margin-bottom:  10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.list{
+    list-style: none;
+    background: #eee;
+    padding: 8px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+li.active{
+    background: rgb(48, 93, 243);
+    color: #fff;
 }
 
