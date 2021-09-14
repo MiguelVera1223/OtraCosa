@@ -1,0 +1,23 @@
+.clientes__data{
+    padding: 1rem 1rem;
+    text-align: center;
+    transition: .4;
+    color: aqua;
+}
+
+.clientes__img, .clientes__title{
+    margin-bottom: var(--mb-2); 
+}
+.clientes__img{
+    width: 9rem;
+    height: auto;
+  
+}
+
+.clientes__cajas{
+    display: grid;
+   
+    /*  grid-auto-rows: 10rem; */
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+
+}

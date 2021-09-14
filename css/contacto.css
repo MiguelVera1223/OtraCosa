@@ -1,0 +1,29 @@
+.contacto__input{
+    width: 100%;
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+    font-weight: var(--font-semi);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1.5px solid var(--second-color);
+    outline: none;
+    margin-bottom: var(--mb-4);
+}
+
+.contacto__button{
+    display: block;
+    border: none;
+    font-size: var(--body-font);
+    cursor: pointer;
+    margin-left: auto;
+}
+.button{
+    background: rgb(48, 93, 243);
+    color: #fff;
+    padding: .75rem 2.5rem;
+    font-weight: var(--font-semi);
+    border-radius: .5rem;
+}
+.button{
+    box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
+}
